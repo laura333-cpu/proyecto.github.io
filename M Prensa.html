@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="M Hip Thrust.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Inicio del menú -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <!-- Cambié el href a "proyecto11.html" -->
+                    <img src="img/logo1.jpg" alt="Logo" width="200" height="80">
+                </a>
+            </div>
+            <div class="nav-items">
+                <a href="servicios.html">Servicios</a>
+                <a href="producto.html" id="showProducts">Productos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="nav-actions">
+                <form id="searchForm" class="search-form">
+                    <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <a href="#" id="cartIcon" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+    <!-- Fin del menú -->
+
+    <div class="container">
+        <div class="product-image">
+            <img src="Img/Prensa.jpeg" alt="Camiseta De Compresion">
+            
+        </div>
+        <div class="product-details">
+            <h2>Prensa</h2>
+            <p>La prensa de piernas permite a los usuarios realizar un movimiento de empuje en el que se extienden las
+                piernas mientras están sentados o recostados. A medida que el usuario empuja la plataforma con los pies,
+                se activa la musculatura de las piernas y se mejora la fuerza general. Este ejercicio es particularmente
+                beneficioso para aquellos que buscan aumentar su masa muscular y mejorar su rendimiento en actividades
+                deportivas.</p>
+            <h3>Características</h3>
+            <ul>
+                <li>Sistema de Resistencia Ajustable:La mayoría de las máquinas de prensa cuentan con un sistema de
+                    pesas ajustable, permitiendo a los usuarios personalizar la carga según su nivel de fuerza y
+                    objetivos de entrenamiento. Esto es fundamental para facilitar el progreso a medida que se
+                    desarrolla la fuerza.</li>
+                <li>Diseño Ergonómico:Estas máquinas están diseñadas para proporcionar comodidad durante el ejercicio,
+                    con asientos y respaldos acolchados. El diseño ergonómico ayuda a mantener una postura adecuada y
+                    reduce el riesgo de lesiones en la parte baja de la espalda.</li>
+                <li>Movimientos Guiados: La prensa generalmente tiene un sistema de rieles que guía el movimiento,
+                    asegurando que el ejercicio se realice en el rango adecuado. Esto mejora la efectividad del
+                    ejercicio y minimiza el riesgo de movimientos incorrectos.</li>
+                <li>Construcción Robusta y Duradera:Fabricadas con materiales de alta calidad, como acero resistente,
+                    las prensas están diseñadas para soportar un uso intensivo y ofrecer estabilidad durante el
+                    ejercicio, lo que las hace ideales para gimnasios comerciales y entrenamientos en casa.</li>
+            </ul>
+            <h3>Garantía</h3>
+            <p>La garantía de una prensa puede variar según el fabricante, pero comúnmente incluye:
+
+                <li>Garantía del Marco: Generalmente de 2 a 5 años, cubriendo defectos estructurales y problemas de
+                    fabricación.</li>
+
+                <li>Garantía de Partes y Componentes: Suele ser de 1 a 3 años, abarcando componentes como el sistema de
+                    resistencia y los mecanismos de ajuste.</li>
+
+                <li>Condiciones de Uso: Es esencial seguir las recomendaciones del fabricante para el uso y
+                    mantenimiento del equipo. Algunos fabricantes pueden requerir el registro del producto o la
+                    presentación del recibo de compra para validar la garantía.</li>
+            </p>
+        </div>
+    </div>
+
+
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="cartTotal">0</span></p>
+            <button id="checkout">Proceder al pago</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/tu_pagina" target="_blank" class="facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/tu_pagina" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/tu_pagina" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/3143717292" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer><!-- Modal del carrito -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: <span id="cartTotal">0</span> COP</p>
+            <h3>Método de Pago</h3>
+            <form id="payment-form">
+                <label for="nequi-phone">Número de Nequi:</label>
+                <input type="text" id="nequi-phone" placeholder="Ingresa tu número de Nequi" required>
+                <button type="submit">Pagar</button>
+            </form>
+            <div id="payment-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://x.com/BODYFIT19946142?t=8oDmS1Cwz2d22VsPVWPBpw&s=08" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/body_fit04/profilecard/?igsh=MWswdGd4YXJrc2lpNQ==" target="_blank"
+                class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/message/KIMQYZMVAUD6I1" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

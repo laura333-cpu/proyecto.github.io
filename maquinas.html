@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="maquinas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Inicio del menú -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"> <!-- Cambié el href a "proyecto11.html" -->
+                    <img src="img/logo1.jpg" alt="Logo" width="200" height="80">
+                </a>
+            </div>
+            <div class="nav-items">
+                <a href="servicios.html">Servicios</a>
+                <a href="producto.html" id="showProducts">Productos</a> <!-- Botón para mostrar productos -->
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="nav-actions">
+                <form id="searchForm" class="search-form">
+                    <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Buscar">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <a href="#" id="cartIcon" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cartCount">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin del menú -->
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="wrapper">
+            <div id="productContainer" class="product-container" style>
+                
+                <!--productos -->
+                <div class="product" data-id="1" data-name="Tablas bosu" data-price="20">
+                    <a href="T Bosu.html" class="product-link">
+                        <h2>Tabla bosu</h2>
+                        <img src="Img/tabla bosu..jpeg" alt="">
+                        <p>Precio: $50.000</p>
+                    </a>
+                    <label for="color-1">Color:</label>
+                    <select id="color-1">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="2" data-name="Máquina de hip thrust" data-price="20">
+                    <a href="M Hip Thrust.html" class="product-link">
+                        <h2>Máquina de hip thrust</h2>
+                        <img src="Img/Máquina de hip thrust.jpg" alt="">
+                        <p>Precio: 400.000</p>
+                    </a>
+                    <label for="color-2">Color:</label>
+                    <select id="color-2">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="4" data-name="Bicicleta" data-price="20">
+                    <a href="M Bicicleta.html" class="product-link">
+                        <h2>Bicicleta</h2>
+                        <img src="Img/Bicicleta.jpeg" alt="">
+                        <p>Precio: 400.000</p>
+                    </a>
+                    <label for="color-4">Color:</label>
+                    <select id="color-4">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="5" data-name="Prensa" data-price="20">
+                    <a href="M Prensa.html" class="product-link">
+                        <h2>Prensa</h2>
+                        <img src="Img/Prensa.jpeg" alt="">
+                        <p>Precio: 450.000 cop</p>
+                    </a>
+                    <label for="color-5">Color:</label>
+                    <select id="color-5">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="6" data-name="Máquina de press de pecho" data-price="20">
+                    <a href="M De Press De Pecho.html" class="product-link">
+                        <h2>Máquina de press de pecho</h2>
+                        <img src="Img/Máquina de press de pecho.jpeg" alt="">
+                        <p>Precio: 600.000 cop</p>
+                    </a>
+                    <label for="color-6">Color:</label>
+                    <select id="color-6">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="7" data-name="Máquina de abdominales cruncher" data-price="20">
+                    <a href="M De Abdominales Cruncher.html" class="product-link">
+                        <h2>Máquina de abdominales cruncher</h2>
+                        <img src="Img/Máquina de abdominales cruncher.png" alt="">
+                        <p>Precio: 400.000 cop</p>
+                    </a>
+                    <label for="color-7">Color:</label>
+                    <select id="color-7">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="8" data-name="Máquina de aductores" data-price="20">
+                    <a href="M De Aductores.html" class="product-link">
+                        <h2>Máquina de aductores</h2>
+                        <img src="Img/Máquina de aductores.jpeg" alt="">
+                        <p>Precio: 420.000 cop</p>
+                    </a>
+                    <label for="color-8">Color:</label>
+                    <select id="color-8">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="10" data-name="Caminadora" data-price="20">
+                    <a href="M Caminadora.html" class="product-link">
+                        <h2>Caminadora</h2>
+                        <img src="Img/Caminadora.jpeg" alt="">
+                        <p>Precio: 400.000 cop</p>
+                    </a>
+                    <label for="color-10">Color:</label>
+                    <select id="color-10">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>  
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="11" data-name="Plataformas para saltos" data-price="20">
+                    <a href="M Plataformas.html" class="product-link">
+                        <h2>Plataformas para saltos</h2>
+                        <img src="Img/Plataformas para saltos.jpeg" alt="">
+                        <p>Precio: 90.000 cop</p>
+                    </a>
+                    <label for="color-11">Color:</label>
+                    <select id="color-11">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="13" data-name="Máquina de extensión de tríceps" data-price="20">
+                    <a href="M Extencion Triceps.html" class="product-link">
+                        <h2>Máquina de extensión de tríceps</h2>
+                        <img src="Img/Maquina Extension De Triceps..jpeg" alt="">
+                        <p>Precio: 550.000 cop</p>
+                    </a>
+                    <label for="color-13">Color:</label>
+                    <select id="color-13">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="14" data-name="Máquina de press militar" data-price="20">
+                    <a href="M Press Militar.html" class="product-link">
+                        <h2>Máquina de press militar</h2>
+                        <img src="Img/Máquina de press militar.jpeg" alt="">
+                        <p>Precio: 500.000 cop</p>
+                    </a>
+                    <label for="color-14">Color:</label>
+                    <select id="color-14">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="15" data-name="Máquina de curl de bíceps" data-price="20">
+                    <a href="M Curl Biceps.html" class="product-link">
+                        <h2>Máquina de curl de bíceps</h2>
+                        <img src="Img/Máquina de curl de biceps.jpg" alt="">
+                        <p>Precio: 700.000 cop</p>
+                    </a>
+                    <label for="color-15">Color:</label>
+                    <select id="color-15">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>   
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="16" data-name="Máquina de extensión de cuadriceps" data-price="20">
+                    <a href="M Extension Cuadriceps.html" class="product-link">
+                        <h2>Máquina de extensión de cuadriceps</h2>
+                        <img src="Img/Máquina de extension de cuadriceps.jpeg" alt="">
+                        <p>Precio:650.000 cop</p>
+                    </a>
+                    <label for="color-16">Color:</label>
+                    <select id="color-16">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select> 
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="17" data-name="Máquina de remo ojalon al pecho" data-price="20">
+                    <a href="M Remo.html" class="product-link">
+                        <h2>Máquina de remo ojalon al pecho</h2>
+                        <img src="Img/Máquina de remo o jalon al pecho.jpeg" alt="">
+                        <p>Precio: 600.000 cop</p>
+                    </a>
+                    <label for="color-17">Color:</label>
+                    <select id="color-17">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>       
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="18" data-name="Máquina de press de hombro" data-price="20">
+                    <a href="M Press Hombro.html" class="product-link">
+                        <h2>Máquina de press de hombro</h2>
+                        <img src="Img/Máquina de press de hombro.jpeg" alt="">
+                        <p>Precio: 400.000 cop</p>
+                    </a>
+                    <label for="color-18">Color:</label>
+                    <select id="color-18">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="19" data-name="Máquina de elevaciones laterales" data-price="20">
+                    <a href="M Elevaciones.html" class="product-link">
+                        <h2>Máquina de elevaciones laterales</h2>
+                        <img src="Img/Máquina de elevaciones laterales.jpeg" alt="">
+                        <p>Precio:400.000 cop</p>
+                    </a>
+                    <label for="color-19">Color:</label>
+                    <select id="color-19">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="20" data-name="Máquina de press normal" data-price="20">
+                    <a href="M Press Normal.html" class="product-link">
+                        <h2>Máquina de press normal</h2>
+                        <img src="Img/Máquina de press normal..jpeg" alt="">
+                        <p>Precio: 350.000 cop</p>
+                    </a>
+                    <label for="color-20">Color:</label>
+                    <select id="color-20">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>       
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="21" data-name="Máquina de press inclinado" data-price="20">
+                    <a href="M Press Inclinado.html" class="product-link">
+                        <h2>Máquina de press inclinado</h2>
+                        <img src="Img/Máquina de press inclinado.jpeg" alt="">
+                        <p>Precio:400.000 cop</p>
+                    </a>
+                    <label for="color-21">Color:</label>
+                    <select id="color-21">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                   <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="22" data-name="Barra olimpica" data-price="20">
+                    <a href="B Olimpica.html" class="product-link">
+                        <h2>Barra olimpica</h2>
+                        <img src="Img/Barra olimpica.png" alt="">
+                        <p>Precio:100.000 cop</p>
+                    </a>
+                    <label for="color-22">Color:</label>
+                    <select id="color-22">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>       
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="24" data-name="Barra olimpica romana" data-price="20">
+                    <a href="B Olimpica Romana.html" class="product-link">
+                        <h2>Barra olimpica romana</h2>
+                        <img src="Img/Barra olimpica romana.jpeg" alt="">
+                        <p>Precio: 110.000 cop</p>
+                    </a>
+                    <label for="color-24">Color:</label>
+                    <select id="color-24">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="25" data-name="Barra de peso liviano" data-price="20">
+                    <a href="B Peso Liviano.html" class="product-link">
+                        <h2>Barra de peso liviano</h2>
+                        <img src="Img/Barra de peso liviano.jpg" alt="">
+                        <p>Precio: 80.000 cop</p>
+                    </a>
+                    <label for="color-25">Color:</label>
+                    <select id="color-25">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>      
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="27" data-name="Barra z corta" data-price="20">
+                    <a href="B Z Corta.html" class="product-link">
+                        <h2>Barra z corta</h2>
+                        <img src="Img/Barra z corta.png" alt="">
+                        <p>Precio: 80.000 cop</p>
+                    </a>
+                    <label for="color-27">Color:</label>
+                    <select id="color-27">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select> 
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="29" data-name="Mancuernas de 5kg" data-price="20">
+                    <a href="M 5K.HTML" class="product-link">
+                        <h2>Mancuernas de 5kg</h2>
+                        <img src="Img/Mancuernas de 5kg.jpeg" alt="">
+                        <p>Precio:25.000 cop</p>
+                    </a>
+                    <label for="color-29">Color:</label>
+                    <select id="color-29">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select> 
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="30" data-name="Mancuernas de 10kg" data-price="20">
+                    <a href="M 10K.HTML" class="product-link">
+                        <h2>Mancuernas de 10kg</h2>
+                        <img src="Img/Mancuernas de 10kg.jpeg" alt="">
+                        <p>Precio:30.000 cop</p>
+                    </a>
+                    <label for="color-30">Color:</label>
+                    <select id="color-30">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>            
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="31" data-name="Mancuernas de 15kg" data-price="20">
+                    <a href="M 15K.HTML" class="product-link">
+                        <h2>Mancuernas de 15kg</h2>
+                        <img src="Img/Mancuernas de 15kg.jpg" alt="">
+                        <p>Precio: 40.000 cop</p>
+                    </a>
+                    <label for="color-31">Color:</label>
+                    <select id="color-31">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>   
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="35" data-name="Discos de 10kg" data-price="20">
+                    <a href="D 10K.HTML" class="product-link">
+                        <h2>Discos de 10kg</h2>
+                        <img src="Img/Discos de 10kg.jpg" alt="">
+                        <p>Precio: 25.000 cop</p>
+                    </a>
+                    <label for="color-35">Color:</label>
+                    <select id="color-35">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select>   
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+                <div class="product" data-id="36" data-name="Discos de 20kg" data-price="20">
+                    <a href="D 20K.HTML" class="product-link">
+                        <h2>Discos de 20kg</h2>
+                        <img src="Img/Discos de 20kg.png" alt="">
+                        <p>Precio:35.000 cop</p>
+                    </a>
+                    <label for="color-36">Color:</label>
+                    <select id="color-36">
+                        <option value="negro">Negro</option>
+                        <option value="gris">Gris</option>
+                        <option value="azul">Azul</option>
+                    </select> 
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+                
+
+            </div>
+
+        </div>
+    </main>
+    <!-- Fin del contenido principal -->
+
+
+    <br>
+    <!-- Modal del carrito -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: <span id="cartTotal">0</span> COP</p>
+            <h3>Método de Pago</h3>
+            <form id="payment-form">
+                <label for="nequi-phone">Número de Nequi:</label>
+                <input type="text" id="nequi-phone" placeholder="Ingresa tu número de Nequi" required>
+                <button type="submit">Pagar</button>
+            </form>
+            <div id="payment-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://x.com/BODYFIT19946142?t=8oDmS1Cwz2d22VsPVWPBpw&s=08" target="_blank" class="twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/body_fit04/profilecard/?igsh=MWswdGd4YXJrc2lpNQ==" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/message/KIMQYZMVAUD6I1" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Incluye el archivo JavaScript al final del documento -->
+    <script src="script.js"></script>
+</body>
+
+</html>
